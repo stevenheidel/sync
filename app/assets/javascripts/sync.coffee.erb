@@ -160,7 +160,7 @@ class Sync.PartialCreator
 
 
   insert: (html, channelUpdate, channelDestroy, selectorStart, selectorEnd) ->
-    @$el.before """
+    @$el.after """
       <script type='text/javascript' data-sync-id='#{selectorStart}'></script>
       <script type='text/javascript' data-sync-el-placeholder></script>
       <script type='text/javascript' data-sync-id='#{selectorEnd}'></script>
